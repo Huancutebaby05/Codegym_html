@@ -1,0 +1,17 @@
+.right-side {
+  background-color: pink;
+}
+
+.right-side div div p {
+  background-color: rgb(85, 81, 81);
+  color: aliceblue;
+}
+
+img {
+  border-radius: 5px;
+}
+
+body div {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

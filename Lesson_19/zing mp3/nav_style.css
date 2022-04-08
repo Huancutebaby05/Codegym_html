@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+nav{
+    padding-left: 20%;
+}
+input.form-control{
+    width: 360px;
+}
+
+.regist a:hover{
+    text-decoration: underline;
+}
+form i{
+    display: inline;
+}

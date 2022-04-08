@@ -1,0 +1,46 @@
+html{
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: khaki;
+}
+h2{
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 0 5px 10px;
+    color: mediumblue;
+    background-color: mediumspringgreen;
+   
+}
+#name{
+    position: absolute;
+    left: 100px;
+}
+#day{
+    position: absolute;
+    left: 100px;
+}
+#sex{
+    position: absolute;
+    left: 53px;
+    top: 130px;
+}
+#class{
+    position: absolute;
+    left: 100px;
+}
+#mail{
+    position: absolute;
+    left: 100px;
+}
+#phone{
+    position: absolute;
+    left: 100px;
+}
+#sub{
+    position: absolute;
+    left: 100px;
+}
+#area{
+    position: absolute;
+    left: 100px;
+}

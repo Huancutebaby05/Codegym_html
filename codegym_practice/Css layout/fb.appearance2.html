@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <script src="https://kit.fontawesome.com/c6d491dc70.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body, html{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        line-height: 1.2em;
+        background-color: #eee;
+    }
+    .grid-container{
+        font-family: inherit;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .grid-container div{
+        box-sizing: border-box;
+        
+        
+    }
+    .header{
+        background-color: white;
+         height: 56px;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         text-align: center;
+        /* background-color: white; */
+       
+    }
+    .left_slide{
+        position: fixed;
+        top: 56px;
+        left: 0;
+        overflow: scroll;
+        height: 700px;
+        width: 24%;
+        margin-left: 10px;
+        background-color: #eee;
+        
+    }
+    .main{
+        position: fixed;
+        top: 56px;
+        left: 24%;
+        padding: 10px 6%;
+        width: 76%;
+        height: 100%;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .right_slide{
+        position: fixed;
+        top: 56px;
+        right: 10px;
+        overflow: scroll;
+        scrollbar-width: 20px;
+        height: 800px;
+        width: 24%;
+        margin-right: 10px;
+        background-color: #eee;
+           }
+    .header{
+        display: grid;
+        grid-template-columns:1fr 2fr 1fr;
+    }
+    .left_slide img,.right_slide img, .avatar img{
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        top: 10px;
+        left: -15px;
+        position: relative;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    #ver{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bar div i{
+         color: rgb(85, 84, 84);
+         font-size: 25px;
+         margin-left: 5px;
+         margin-top: 5px;
+         padding: 10px 40px;
+         border-radius: 5px;    
+     }
+     .bar div i:hover{
+         background-color: #eee;
+     }
+     .bar div i:active{
+         color: blue;
+     }
+     .fa-facebook{
+         float: left;
+         font-size: 2.7rem;
+         color: blue;
+         background-color: white;
+         border-radius: 16px;
+         margin: 8px 8px 0 15px;
+     }
+    .searchbox input{
+        box-sizing: border-box;
+        float: left;
+         width: 240px;
+         height: 40px;
+         background-color: #eee;
+         border-style: none;
+         border-radius: 20px;
+         margin-top: 8px;
+         padding-left: 10px;
+     }
+    .noname{
+        margin-left: 150px;
+    }
+    .header_option a:hover{
+         background-color: #eee;
+     }
+     .noname a{
+         text-align: center;
+         font-size: 20px;
+         float: left;
+         box-sizing: border-box;
+         background-color: #ddd;
+         height: 38px;
+         width: 38px;
+         padding: 8px 8px;
+         margin-top: 8px;
+         margin-left: 10px;
+         border-radius: 20px;
+         
+     }
+     .header_option .avatar{
+         margin-left: 75px;
+         float: left;
+         position: relative;
+         margin-top: 3px;
+       
+     }
+     .header_option img{
+         height: 30px;
+         width: 30px; 
+     }
+     .name{
+         position: absolute;
+         font-size: 15px;
+         font-weight: 600;
+         top: 18px;
+         left: 20px;
+     }
+  
+    .left_slide div{
+        text-align: left;
+        margin: 5px
+    }
+    .left_name{
+        margin-left: -25px;
+        margin-top: 0;
+    }
+  
+
+    li{
+        box-sizing: border-box;
+        width: 300px;
+        height: 52px;
+        margin-left: 0;
+        list-style-type: none;
+        border-radius: 5px;
+        
+    }
+    li:hover{
+         background-color: #ddd;
+     }
+    
+    #ver ul li i{
+        font-size: 25px;
+        color: blue;
+        margin-top: 10px;
+        margin-left: -35px;
+        margin-right: 25px;
+        height: 25px;
+        width: 25px;
+    }
+    #ver{
+        margin-bottom: -20px;
+    }
+    .menu_item li{
+        margin-left: -22px;
+    }
+    .menu_item li i{
+        font-size: 25px;
+        color: blue;
+        margin-left: -5px;
+        margin-right: 15px;
+        height: 25px;
+        width: 25px;
+        margin-top: 13px;
+    }
+    .privacy a, .privacy{
+        font-size: 0.9rem;
+        line-height: 1.2em;
+        font-weight: 300;
+        margin: 3px;
+    }
+    .opinion{
+        box-sizing: border-box;
+        display: inline;
+        height: 123px;
+        width: 590px;    
+    }
+    .opinion img {
+        display: block;
+        text-align: left;
+        height: 40px;
+        width: 40px;
+        border-radius: 24px;
+        margin-top:10px;   
+    }
+    .opinion img:hover{
+        background-color: #eee;
+    }
+    .opinion div{
+        margin: 7px;
+    }
+    .opinion input{
+        display: block;
+        float: left;
+        font-size: 110%;
+        box-sizing: border-box;
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        border-style: none;
+        background-color: #eee;
+        padding-left: 20px;
+        margin: -40px 0 0 50px; 
+    }
+    .opinion i{
+        font-size: 24px;
+        color: blue;
+        padding: 10px;
+        margin-top: 0px;
+     }
+    .opinion a{
+        font-weight: 400;
+        padding: 12px 28px;
+        border-radius: 10px;
+    }
+    .opinion a:hover{
+        background-color: #ddd;
+    }
+    .main>div{
+        display: inline-block;
+        border: 1px solid #ddd;
+        background-color: white;
+        width: 590px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+
+
+
+
+
+.user{
+    display: block;
+}
+.user img{
+    display: inline;
+    margin: 10px 0 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    float: left;
+    cursor: pointer;
+}
+.user img:hover{
+    background-color: rgb(245, 239, 239);
+}
+.user_name {
+    float: left;
+   margin: 10px 0 0 10px;
+   position: relative;
+   cursor: pointer;
+}
+.user_name:hover{
+    text-decoration: underline;
+}
+.user_time{
+    position: absolute;
+    margin: 30px 0 0 60px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+.status{
+    clear: both;    
+}
+.status span{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.status img{
+    width: 589px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.motion{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.motion>.fas{
+    font-size: 0.8rem;
+    padding: 5px 5px;
+    border-radius: 15px ;
+}
+.solike{
+    cursor: pointer;
+}
+.solike:hover{
+    text-decoration: underline;
+}
+.fa-heart{
+    background-color: red;
+    color: white;
+}
+.fa-thumbs-up{
+    background-color: blue;
+    color: white;
+}
+.fa-surprise{
+    background-color: black;
+    color: yellow;
+}
+.k{
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.k:hover{
+    text-decoration: underline;
+}
+.reaction{
+    margin-left: 8px;
+}
+.reaction>div{
+    text-align: center;
+    float: left;
+    height: 44px;
+    box-sizing: border-box;
+    width: 191px;
+    margin-bottom: 5px;
+    padding: 10px 0 0 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.reaction .fa-thumbs-up{
+    font-size: 1.2rem;
+    background-color: white;
+    color: black;
+}
+.fa-comment-alt,.fa-share{
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+.reaction>div:hover{
+    background-color: #eee;
+}
+.bar div {
+    position: relative;
+}
+.bar div span{
+    visibility: hidden;
+    font-size: 0.9rem;
+    font-weight: 300;
+    position: absolute;
+    top: 56px;
+    left:191px ;
+}
+.bar div a:hover span{
+    visibility: visible;
+}
+      </style>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <div class="searchbox">
+                <div><a href="#"><i class="fab fa-facebook"></i></a></div>
+                <div><input type="text" placeholder="Tìm kiếm trên Facbook"></div>
+            </div>
+            <div class="bar">
+                <div>
+                  <a href="#"> <i style="color: blue;" class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                  <a href="#"> <i class="fa fa-laptop"></i>
+                    <span>Watch</span>
+                </a>
+                  <a href="#"> <i class="fas fa-users"></i>
+                    <span>Groups</span>
+                </a>
+                  <a href="#"> <i class="fas fa-gamepad"></i>
+                    <span>Gaming</span>
+                </a>
+                </div>
+                <!-- <i class="fab fa-facebook-messenger"></i> -->
+            </div>
+            <div class="header_option">
+                <div class="avatar"> 
+                    <a  href="#"> <img  src="https://images5.alphacoders.com/836/thumbbig-836124.webp" alt=""> <span class="name" >Truong</span></a>
+                </div>
+                 <div class="noname">
+                     <a href="#"> <i class="fas fa-braille"></i></a>
+                    <a href="#"> <i class="fab fa-facebook-messenger"></i></a>                     <a href="#"> <i class="fas fa-bell"></i></a>
+                    <a href="#"> <i class="fas fa-caret-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="left_slide">
+            <div class="avatar">
+            </div>
+            <div id="ver">
+                <ul>
+                    <li class="left_name"><a href="#"> <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t39.30808-6/269768723_3393022504258179_561163278079158190_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=nbf63PlwAZkAX_4PbGL&_nc_ht=scontent-nrt1-1.xx&oh=00_AT8P6LCCMzFjZfDP5NBFuDU3-9ql1gqHSKTd-yT8bS4ojQ&oe=62016E3E" alt=""> Van truong</a>                    </li>
+                    <li class="list_item"><a href="#"> <i class="fas fa-user-friends"></i>Friends</a></li>
+                    <li class="list_item"><a href="#"> <i class="fas fa-users"></i>Groups</a></li>
+                    <li class="list_item"><a href="#"> <i class="fas fa-calendar-check"></i>Events</a></li>
+                    <li class="list_item"><a href="#"> <i class="fa fa-laptop"></i>Watch</a></li>
+                    <li class="list_item"><a href="#"> <i class="fas fa-history"></i>Memories</a></li>
+                    <li class="list_item"><a href="#"> <i class="fas fa-caret-down"></i>See more</a></li>
+                </ul>
+            </div>
+            <div class="menu_item">
+                <hr>
+                Your shortcuts
+                <ul>
+                    <li> <a href="#"> <img src="https://images5.alphacoders.com/825/thumbbig-825641.webp" alt="">Group 1</a></li>
+                    <li> <a href="#"> <img src="https://images5.alphacoders.com/825/thumbbig-825641.webp" alt="">Group 2</a></li>
+                    <li> <a href="#"> <img src="https://images5.alphacoders.com/825/thumbbig-825641.webp" alt="">Group 3</a></li>
+                    <li> <a href="#"> <img src="https://images5.alphacoders.com/825/thumbbig-825641.webp" alt="">Group 4</a></li>
+                    <li> <a href="#"> <img src="https://images5.alphacoders.com/825/thumbbig-825641.webp" alt="">Group 5</a></li>
+                    <li> <a href="#"> <i class="fas fa-caret-down"></i>See more</a></li>
+                </ul>
+            </div>
+            <div class="privacy">
+                <a href="#">Privacy.</a>
+                <a href="#">Term.</a>
+                <a href="#">Advertising.</a>
+                <a href="#">Ad choices.</a>
+                <a href="#">Cookies.</a>
+                <a href="#">More.</a>
+                Meta © 2022
+            </div>
+        </div>
+        <div class="main">
+            <div class="opinion">
+                <div>
+                <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t39.30808-6/269768723_3393022504258179_561163278079158190_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=nbf63PlwAZkAX_4PbGL&_nc_ht=scontent-nrt1-1.xx&oh=00_AT8P6LCCMzFjZfDP5NBFuDU3-9ql1gqHSKTd-yT8bS4ojQ&oe=62016E3E" alt="">
+                <input type="text" placeholder="What's on your mind, Truong?">
+            </div>
+                <hr>
+                <div>
+                 <a href="#"> <i class="fas fa-video"></i>Live video</a>
+                 <a href="#"> <i class="fas fa-images"></i>Photo/video</a>
+                 <a href="#"> <i class="fas fa-grin"></i>Felling/activity</a>
+                </div>
+            </div>
+            <div class="main1">
+                <div class="user">
+                    <div class="user_img">
+                        <img class="profile_pic" width="50" height="50px" src="./img/178961.jpg" alt="mewmew">
+                    </div>
+                    <div class="user_name">
+                        Nguyen Van Truong 
+                    </div>
+                    <div class="user_time">
+                        11h
+                    </div>
+                </div>
+                <div class="status">  
+                     <span > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae saepe adipisci sint recusandae, iure ullam quia similique excepturi quis, optio repellendus nostrum aspernatur doloribus reiciendis fugiat at, quasi dolorum voluptate!</span>
+                     <img src="./img/392510.jpg" alt="gaugau">
+                </div>
+                <div class="motion">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-surprise"></i>
+                    <span class="solike">1 triệu người</span>
+                    <span class="k"> 89k comment</span>
+                </div>
+                <hr>
+                <div class="reaction">
+                    <div class="like">
+                        <i class="far fa-thumbs-up"></i>
+                        Like
+                    </div>
+                    <div class="comment">
+                        <i class="far fa-comment-alt"></i>
+                        Comment
+                    </div>
+                    <div class="share">
+                        <i class="fas fa-share"></i>
+                        Share
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main1">
+                <div class="user">
+                    <div class="user_img">
+                        <img class="profile_pic" width="50" height="50px" src="./img/178961.jpg" alt="mewmew">
+                    </div>
+                    <div class="user_name">
+                        Nguyen Van Truong 
+                    </div>
+                    <div class="user_time">
+                        11h
+                    </div>
+                </div>
+                <div class="status">  
+                     <span > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae saepe adipisci sint recusandae, iure ullam quia similique excepturi quis, optio repellendus nostrum aspernatur doloribus reiciendis fugiat at, quasi dolorum voluptate!</span>
+                     <img  src="./img/392510.jpg" alt="gaugau">
+                </div>
+                <div class="motion">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-thumbs-up"></i>
+                    <i class="fas fa-surprise"></i>
+                    <span>1 triệu người</span>
+                    <span class="k"> 89k comment</span>
+                </div>
+                <div class="reaction">
+                    <div class="like">
+                        <i class="far fa-thumbs-up"></i>
+                        Like
+                    </div>
+                    <div class="comment">
+                        <i class="far fa-comment-alt"></i>
+                        Comment
+                    </div>
+                    <div class="share">
+                        <i class="fas fa-share"></i>
+                        Share
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right_slide">
+            
+            <ul class="contacts">
+                <span class="spons"> Sponsored</span>
+                <hr>
+                Contacts
+               <li><a href="#"><img src="./img/119965.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/134892.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="https://images7.alphacoders.com/836/thumbbig-836019.webp" alt=""> Vương Đắc Thị Huân</a></li>
+              <li> <a href="#"><img src="./img/178961.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/303900.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/308539.png" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/392510.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/96332.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/83192.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/416374.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/415819.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/119965.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/134892.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="https://images7.alphacoders.com/836/thumbbig-836019.webp" alt=""> Vương Đắc Thị Huân</a></li>
+              <li> <a href="#"><img src="./img/178961.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/303900.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/308539.png" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/392510.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/96332.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/83192.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/416374.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+               <li><a href="#"><img src="./img/415819.jpg" alt=""> Vương Đắc Thị Huân</a></li>
+              <li> <a href="#"><img src="https://images7.alphacoders.com/836/thumbbig-836019.webp" alt=""> Vương Đắc Thị Huân</a></li>
+              <li> <a href="#"><img src="https://images7.alphacoders.com/836/thumbbig-836019.webp" alt=""> Vương Đắc Thị Huân</a></li>
+              <li> <a href="#"><img src="https://images7.alphacoders.com/836/thumbbig-836019.webp" alt=""> Vương Đắc Thị Huân</a></li>
+
+            </ul>
+        </div>
+    </div>  
+</body>
+</html>

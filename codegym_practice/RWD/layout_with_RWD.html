@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    header{
+        height: 44px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(32, 30, 30);
+        color: rgb(214, 207, 207);
+    }
+    ul{
+        height: 44px;
+        float: left;
+        clear: both;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        
+    }
+    li{
+        display: inline-block;
+        list-style-type: none;
+        box-sizing: border-box;
+        width: 64px;
+       height: 44px;
+       padding: 10px;
+        text-align: center;
+    }
+    header p{
+        float: right;
+        margin: 0;
+        margin-right: 20px;
+        padding: 8px;
+        cursor: pointer;
+        }
+    li:hover{
+        background-color: black;
+        cursor: pointer;
+        }
+    a{
+         display: block;
+         text-decoration: none;
+         color: blue;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .left{
+        float: left;
+        width: 20%;
+        height: 600px;
+        background-color: rgb(236, 236, 235);
+        line-height: 24px;
+        text-align: center;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .main{
+        float: left;
+        width: 58%;
+        margin: 0 1%;
+        height: 600px;
+        box-sizing: border-box;
+        
+
+    }
+    .main1{
+        border-bottom: 1px solid #eee;
+        height: 300px;
+    }
+    .right{
+        box-sizing: border-box;
+        float: left;
+        width: 20%;
+        height: 600px;
+        text-align: center;
+        background-color: rgb(236, 236, 235);
+    }
+    .right>div{
+        box-sizing: border-box;
+        margin: auto;
+        width: 80%;
+        margin-top: 30px;
+        padding-top:40px ;
+        height: 100px;
+        text-align: center;
+        background-color: rgb(190, 186, 186);
+    }
+     
+    .footer{
+        width: 100%;
+        clear: both;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 8px;
+        height: 44px;
+        background-color: rgb(95, 93, 93);
+        color: white;
+    }
+    @media screen and (max-width:1024px){
+        .right{
+            visibility: hidden;
+            display: none;
+        }
+        .main{
+            width: 78%;
+        }
+    }
+    @media screen and (max-width: 414px){
+        .right{
+            visibility: hidden;
+            display: none;
+        }
+        .main{
+            width: 78%;
+        }
+        li{
+            visibility: hidden;
+            display: none;
+        }
+        ul li:first-child{
+            visibility: visible;
+            display: block;
+        }
+    } 
+</style>
+<body>
+    <header>
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact</li>
+        </ul>
+        <p>Login</p>
+    </header>
+    <div class="left">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="main">
+    <div class="main1">
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis obcaecati quod voluptas voluptatum iusto, neque odit libero dolorum ratione, deleniti provident quibusdam sit quis iste tempora incidunt quisquam facere corporis?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi minus magnam ad porro voluptatem rem sed odit ratione nihil fugit fuga libero facere deleniti, nisi fugiat sint quod asperiores dolorum.</p>
+    </div>
+    <div class="main2">
+        <h2>Test</h2>
+        <p>lorem ipsum...</p>
+    </div>
+    `</div>
+    <div class="right">
+        <div>
+            ADS
+        </div>
+        <div>
+            ADS
+        </div>
+    </div>
+    <div class="footer">
+        Footer text
+    </div>
+</body>
+</html>

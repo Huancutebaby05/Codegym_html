@@ -1,0 +1,43 @@
+$font-family: tahoma;
+$font-size: 20px;
+$text-color: #85FFD6;
+$bg-color:#008F8C;
+
+
+
+html, body{
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: 36px;
+}
+#container{
+    width: 70%;
+    margin: 30px auto;
+    .navbar ul{
+        display:flex ;
+        flex-wrap: wrap;
+        flex-direction: row;
+        text-align: center;
+        padding: 0;
+        li{
+            list-style: none;
+            flex-grow: 1;
+            padding: 8px 0;
+            border: 2px solid $text-color;
+            background-color: $bg-color;
+            transition: 1s;
+            a{
+                text-decoration: none;
+                color: $text-color;
+            }
+        }
+        li:hover a{
+            color: $bg-color;
+        }
+        li:hover{
+            background-color: $text-color;
+            border: 2px solid $bg-color;
+        }
+    }
+}
+

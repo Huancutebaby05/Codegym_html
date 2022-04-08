@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Gird</title>
+</head>
+<style>
+    html, body{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .gird-container{
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+        /* grid-template-rows: 1fr 1fr 2fr 2fr 1fr; */
+        /* grid-template-areas: ; định dạng cho gird thông qua đặt area cho các gird item */
+        grid-template-areas: "header header header"
+                            "ads content1 right"
+                            "ads content2 right"
+                            "footer footer footer";
+        grid-gap: 3px;
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 50%;
+        height: 80%;
+        margin: auto;
+        margin-top: 5%;
+        background-color: #eee;
+        text-align: center;
+        align-self: center;
+
+    }
+    .gird-item-1{
+        background-color: aqua;
+        /* grid-column-start: 1;
+        grid-column-end: 4;
+        grid-column: 1/4; */
+        grid-area: header;
+    }
+    .gird-item-2{
+        background-color: blue;
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        grid-area: footer;
+    }
+    .gird-item-3{
+        background-color: rebeccapurple;
+        grid-area: ads;
+    }
+    .gird-item-4{
+        background-color: orange;
+        grid-area: content1;
+    }
+    .gird-item-5{
+        background-color: green;
+        grid-area: content2;
+    }
+    .gird-item-6{
+        background-color: tomato;
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        grid-area: right;
+    }
+</style>
+<body>
+    <div class="gird-container">
+        <div class="gird-item-1">item1</div>
+        <div class="gird-item-2">item2</div>
+        <div class="gird-item-3">item3</div>
+        <div class="gird-item-4">item4</div>
+        <div class="gird-item-5">item5</div>
+        <div class="gird-item-6">item6</div>
+    </div>
+</body>
+</html>

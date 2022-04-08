@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <script src="https://kit.fontawesome.com/c6d491dc70.js" crossorigin="anonymous"></script>
+</head>
+<style>
+body,html{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.2em;
+}
+.main{
+    width: 500px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+.main>div{
+    width: 480px;
+    margin: 5px 10px;
+}
+.header{
+    background-color: rgb(60, 60, 163);
+    height: 60px;
+    display: inline-block;
+    margin: 5px 10px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+.user{
+    background-color: rgb(255, 255, 255);
+    width: 480px;
+    height: 180px;
+    margin: 5px 10px ;
+}
+
+.motion{
+    background-color: white;
+    width: 480px;
+    height: 40px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    margin: 0 10px 0;
+   
+}
+.reaction{
+    margin: 0 10px 10px;
+    width: 480px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+.reaction i{
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+.reaction>div{
+    display: inline-block;
+}
+.fa-paper-plane, .fa-facebook-messenger{
+    color: white;
+}
+input{
+    width: 300px;
+    height: 24px;
+    text-align: center;
+    background-color: rgb(18, 18, 133);
+    border-radius: 12px;
+    font-size: 1.2rem;
+    margin: 0 20px;
+    border: 1px solid rgb(18, 18, 133);
+}
+.profile>img{
+    float: left;
+    margin: 10px;
+    border-radius: 25px;
+}
+.user_name{
+    margin-top: 15px;
+    margin-left: 10px;
+    float: left;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    position: relative;
+}
+.time{
+    float: left;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.status{
+    float: right;
+   margin: 10px;
+}
+.motion>.fas{
+    padding: 5px 5px;
+}
+.fa-heart{
+    background-color: red;
+    color: white;
+    border-radius: 15px ;
+    margin-left: 10px;
+}
+.fa-thumbs-up{
+    background-color: blue;
+    color: white;
+    border-radius: 15px ;
+}
+.fa-surprise{
+    background-color: black;
+    color: yellow;
+    border-radius: 15px ;
+}
+#k{
+    float: right;
+    margin-right: 10px;
+    padding-top: 3px;
+}
+.reaction>div{
+    margin: 10px;
+    padding: 5px 10px;
+}
+.reaction .fa-thumbs-up{
+    background-color: white;
+    color: black;
+}
+.fa-comment-alt,.fa-share{
+    color: rgb(0, 0, 0);
+}
+
+</style>
+<body>
+    <div class="main">
+        <div class="header">
+            <i class="fas fa-paper-plane"></i>
+            <input type="text" name="search" placeholder="Search">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+        <div class="user">
+            <div class="profile">
+                <img class="profile_pic" width="50" height="50px" src="./img/178961.jpg" alt="mewmew">
+            </div>
+            <div class="user_name">
+                Nguyen Van Truong
+            </div>
+            <div class="time">
+                i dont no
+            </div>
+             <div class="status">  <span > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae saepe adipisci sint recusandae, iure ullam quia similique excepturi quis, optio repellendus nostrum aspernatur doloribus reiciendis fugiat at, quasi dolorum voluptate!</span>
+            </div>
+        </div>
+        <div class="image">
+            <img  style="width: 480px;" src="./img/392510.jpg" alt="gaugau">
+        </div>
+        <div class="motion">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-thumbs-up"></i>
+            <i class="fas fa-surprise"></i>
+            <span>1 triệu người</span>
+            <span id="k"> 89k comment</span>
+        </div>
+    
+        <div class="reaction">
+            <div class="like">
+                <i class="far fa-thumbs-up"></i>
+                Like
+            </div>
+            <div class="comment">
+                <i class="far fa-comment-alt"></i>
+                Comment
+            </div>
+            <div class="share">
+                <i class="fas fa-share"></i>
+                Share
+            </div>
+        </div>
+    </div>
+</body>
+</html>

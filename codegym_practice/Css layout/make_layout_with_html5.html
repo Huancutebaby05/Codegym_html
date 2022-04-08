@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=https://drive.google.com/drive/folders/1Vu264M-aCFINyByxdHdArNmxJHgIXdbM?usp=sharing, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Verdana,sans-serif;
+    font-size: 0.9rem;
+}
+
+header, footer {
+    padding: 15px;
+    color: white;
+    background-color: black;
+}
+header{
+    padding: 5px;
+}
+header h1{
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+}
+header h1:hover{
+    background-color: rgb(37, 35, 35);
+}
+section {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(221, 29, 29);
+}
+
+article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+}
+
+nav ul li {
+    color: white;
+    position: relative;
+    display: inline-block; 
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+nav ul li:hover{
+    background-color: aqua;
+}
+
+nav ul ul{
+    position: absolute;
+    visibility: hidden;
+    font-size: 16px;
+    left: 0px;
+    top: 44px;
+}
+nav ul li:hover ul{
+    visibility: visible;
+}
+</style>
+<body>
+    <header>
+        <h1>Monday Times</h1>
+      </header>
+      
+      <nav>
+      <ul>
+        <li>
+            News
+            <ul>
+                <li>American</li>
+                <li>Asia</li>
+                <li>Japan</li>
+            </ul>
+        </li>
+        <li>
+            Sports
+            <ul>
+                <li>Laliga</li>
+                <li>Cup C1</li>
+                <li>World cup</li>
+            </ul>
+        </li>
+        <li>
+            Weather
+            <ul>
+                <li>American</li>
+                <li>Asia</li>
+                <li>Japan</li>
+            </ul>
+        </li>
+      </ul>
+      </nav>
+      
+      <section>
+        <h2>News Section</h2>
+        <article>
+          <h2>News Article</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+        </article>
+        <article>
+          <h2>News Article</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est nibh, et consectetur tortor feugiat at.</p>
+        </article>
+      </section>
+      
+      <footer>
+        <p>&copy; 2014 Monday Times. All rights reserved.</p>
+      </footer>
+</body>
+</html>

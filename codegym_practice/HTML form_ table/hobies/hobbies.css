@@ -1,0 +1,48 @@
+html{
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 10px 10px 0;
+  
+}
+body{
+    font-size: 20px;
+}
+#name{
+    position: absolute;
+    left: 100px; 
+}
+#email{
+    position: absolute;
+    left: 100px;
+    }
+#aa{
+position: relative;
+  left: 80px;
+  top: -40px;
+}
+#tt{
+    position: relative;
+    left: 80px;
+    top: -40px;
+    
+}
+#lw{
+    position: relative;
+    left: 80px;
+    top: -40px;
+}
+#dl{
+    position: relative;
+    left: 80px;
+    top: -40px;
+}
+
+

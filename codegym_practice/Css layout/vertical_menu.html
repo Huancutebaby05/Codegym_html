@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vartical menu</title>
+</head>
+<style>
+    body{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:0;
+        margin:0;
+}
+    .lv1, .lv2{
+        position: relative;
+        list-style-type: none;
+        background-color: #eee;
+        line-height: 20px;
+        padding: 10px;
+        width: 100px;
+        height: auto;
+        cursor: pointer;
+    }
+    .lv2{
+        width: 200px;
+    }
+    li a{
+        text-decoration: none;
+        color: rgb(255, 0, 0);
+        
+    }
+    li:hover{
+        color: white;
+        background-color: orange;
+    }
+    .menu ul ul{
+        position: absolute;
+        top:0;
+        left:90px;
+        visibility:hidden;
+}
+    .menu ul li:hover ul{
+         visibility:visible;
+}
+</style>
+<body>
+    <h1>This is vartical menu</h1>
+    <div class="menu">
+        <ul>
+            <li class="lv1">
+                <a href="#"> Home</a>
+            </li>
+            <li class="lv1">
+                <a href="#"> Thể loại</a>
+              <ul>
+                <li class="lv2"><a href="#"> Tu Tiên</a></li>
+                <li class="lv2"><a href="#"> Trọng Sinh</a></li>
+                <li class="lv2"><a href="#"> Hài Hước</a></li>
+                <li class="lv2"><a href="#"> Đam Mỹ</a></li>
+              </ul>
+            </li>
+            <li class="lv1">
+                <a href="#"> Năm sản xuất</a>
+            <ul>
+                <li class="lv2"><a href="#"> 2017</a></li>
+                <li class="lv2"><a href="#"> 2018</a></li>
+                <li class="lv2"><a href="#"> 2019</a></li>
+                <li class="lv2"><a href="#"> 2020</a></li>
+            </ul>
+        </li>
+            <li class="lv1">
+                <a href="#"> Tác giả</a>
+            <ul>
+                <li class="lv2"><a href="#"> Mạc Hương Đồng Khiếu</a></li>
+                <li class="lv2"><a href="#"> Nhĩ Căn</a></li>
+                <li class="lv2"><a href="#"> ÁM Ma Sư</a></li>
+                <li class="lv2"><a href="#"> Mã ANh Hùng</a></li>
+            </ul>
+        </li>
+            <li class="lv1">
+                <a href="#"> Phim đã lưu</a>
+            <ul>
+                <li class="lv2"><a href="#"> Bạn Gái Thiên Kiếp Của Tôi</a></li>
+                <li class="lv2"><a href="#"> Ma Đạo Tổ Sư</a></li>
+                <li class="lv2"><a href="#"> Họa Giang Hồ Chi Bất Lương Nhân</a></li>
+                <li class="lv2"><a href="#"> Thiên Hành Cửu Ca</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+</body>
+</html>

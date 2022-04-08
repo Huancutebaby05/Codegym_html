@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tờ khai y tế</title>
+    <link rel="stylesheet" href="Khai bao y te.css">
+</head>
+<body>
+    <div id="head">
+        <h1 >
+            TỜ KHAI Y TẾ ĐỐI VỚI NGƯỜI NHẬP CẢNH
+        </h1>
+        <h2>
+            ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG CHỐNG DỊCH BỆNH TRUYỀN NHIỄM
+        </h2>
+        <h3 style="color: red;">
+            Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự
+        </h3>
+    </div>
+    <div id="body">
+        <form action="">
+           <p id="dt"> Đối tượng <span style="color: red;"><i>(*)</i></span> <br>
+            <select name="Đối tượng" id=" dt">
+                <option value="chon">-Chọn-</option>
+                <option value="cg">Chuyên Gia</option>
+                <option value="chon">Người Việt Nam</option>
+                <option value="chon">Học sinh/ Sinh viên quốc tế</option>
+                <option value="khac">Khác</option>
+            </select>
+           </p>
+            <p id="cuakhau"> Cửa khẩu <span style="color: red;"><i>(*)</i></span><br>
+            <select name="cuakhau" id="ck">
+                <option value="chon">-Chọn-</option>
+                <option value="lc">Lào Cai</option>
+                <option value="hn">Hà Nội</option>
+                <option value="hcm">Hồ Chí Minh</option>
+    
+            </select>
+        </p>
+
+         <p>   Họ tên (ghi chữ IN HOA) <span style="color: red;"><i>(*)</i></span>
+            <br>
+            <input size="50" type="text" name="fullname" id="fn">
+        </p>
+        <p id="ntn">  
+            Ngày tháng năm sinh  <span style="color: red;"><i>(*)</i></span>
+            <br>
+            <select name="day" id="day">
+                <option value="select">Ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+               
+            </select>
+            <select name="month" id="month">
+                <option value="select">Tháng</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="year" id="year">
+                <option value="Năm">Năm</option>
+                <option value="1997">1997</option>
+            </select>
+        </p>
+        <p id="gt">
+            Giới tính <span style="color: red;"><i>(*)</i></span>
+            <select name="sex" id="sex">
+                <option value="select">-Chọn-</option>
+                <option value="female">Nữ</option>
+                <option value="male">Nam</option>
+                <option value="khác">Khác</option>
+            </select>
+        </p>
+        <p id="qt">
+            Quốc tịch <span style="color: red;"><i>(*)</i></span><br>
+            <input type="text" name="nationality" id="QT" placeholder="Quốc tịch">
+        </p>
+        <p>
+            Số hộ chiếu hoặc số CMND hoặc giấy thông hành hợp pháp khác <span style="color: red;"><i>(*)</i></span>
+            <br>
+            <input type="password" name="identify" id="id">
+        </p>
+            
+            Thông tin đi lại <span style="color: red;"><i>(*)</i></span>
+            <br>
+            <input type="radio" name="vehical" id="fight" >
+            <label for="fight">Tàu Bay</label>
+            <input type="radio" name="vehical" id="boat">
+            <label for="Tàu Thuyền">Tàu Thuyền</label>
+            <input type="radio" name="vehical" id="car">
+            <label for="car">Ô Tô</label>
+            <input type="radio" name="vehical" id="other">
+            <label for="other">Khác</label>
+          <p>
+            Số hiệu phương tiện
+            <br>
+            <input type="text"name="degit" id="số hiệu" placeholder="VD:ABC123">
+           </p>
+           <p>
+            Số ghế <br>
+            <input type="text" name="soghe" id="masoghe">
+        </p>
+            Ngày khởi hành <span style="color: red;"><i>(*)</i></span>
+            <br>
+            <select name="day" id="day">
+                <option value="select">Ngày</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+               
+            </select>
+            <select name="month" id="month">
+                <option value="select">Tháng</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <select name="year" id="year">
+                <option value="Năm">Năm</option>
+                <option value="1997">1997</option>
+            </select>
+            </p>
+            <p>
+             Ngày nhập cảnh <span style="color: red;"><i>(*)</i></span>
+                <br>
+                <select name="day" id="day">
+                    <option value="select">Ngày</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                   
+                </select>
+                <select name="month" id="month">
+                    <option value="select">Tháng</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="Năm">Năm</option>
+                    <option value="1997">1997</option>
+                </select>
+              </p>
+              <p>
+                  <input type="reset" value="Reset">
+                 <button style="sumit">
+                    Finish
+                 </button>
+              </p>
+        </form>
+    </div>
+    
+
+</body>
+</html>

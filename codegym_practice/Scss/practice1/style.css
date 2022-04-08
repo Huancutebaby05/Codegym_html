@@ -1,0 +1,63 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body > div:first-child {
+  position: absolute;
+  opacity: 0.9;
+  width: auto;
+  left: 8px;
+  right: 10px;
+}
+
+body > div:first-child .gridcontainer .gridwrapper:nth-child(1) {
+  height: 90px;
+}
+
+body > div:first-child .gridcontainer .gridwrapper:nth-child(1) .gridcontent {
+  width: 100%;
+  background: #9933cc;
+  border-right-color: transparent;
+  width: 8.33%;
+  margin: 0;
+  border-right: 1px solid grey;
+  height: 100%;
+  float: left;
+  background-color: #84c754;
+  background-color: #f1f1f1;
+}
+
+body > div:first-child .gridcontainer .gridwrapper:nth-child(2) {
+  height: 230px;
+}
+
+body > div:first-child .gridcontainer .gridwrapper:nth-child(2) .gridcontent {
+  background-color: #ffffff;
+  border: none;
+  width: 25%;
+  padding-top: 15px;
+  width: 8.33%;
+  margin: 0;
+  border-right: 1px solid grey;
+  height: 100%;
+  float: left;
+  background-color: #84c754;
+  background-color: #f1f1f1;
+}
+
+body > div:first-child .gridcontainer .gridwrapper:nth-child(2) .gridcontent div {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+}
+
+body > div:first-child .gridcontainer .gridwrapper:nth-child(2) .gridcontent > div:last-child {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 15%;
+}
+/*# sourceMappingURL=style.css.map */

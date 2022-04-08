@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Excercise</title>
+</head>
+<style>
+    html, body{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .gird-container{
+        padding: 10px;
+        margin: 5% auto;
+        overflow: hidden;
+        background-color: #eee;
+        width: 60%;
+        height: 80%;
+        font-size: 24px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 18% 10% 12% 30% 30%;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "header header header header"
+        "nav-menu nav-menu nav-menu nav-menu"
+        "TAB1 TAB2 TAB3 TAB4"
+        "Main Main Main Banner1"
+        "Main Main Main Banner2";
+    }
+    .gird-item-1{
+        background-color: aqua;
+        grid-area: header;
+    }
+    .gird-item-2{
+        background-color: red;
+        grid-area: nav-menu;
+    }
+    .gird-item-3{
+        background-color: yellow;
+        grid-area: TAB1;
+    }
+    .gird-item-4{
+        background: rgb(7, 11, 252);
+        grid-area: TAB2;
+    }
+    .gird-item-5{
+        background-color: green;
+        grid-area: TAB3;
+    }
+    .gird-item-6{
+        background-color: tomato;
+        grid-area: Main;
+    }
+    .gird-item-7{
+        background-color: orange;
+        grid-area: Banner1;
+    }
+    .gird-item-8{
+        background-color: pink;
+        grid-area: Banner2;
+    }
+    .gird-item-9{
+        background-color: rgb(183, 0, 255);
+        grid-area: TAB4;
+    }
+</style>
+<body>
+    <div class="gird-container">
+        <div class="gird-item-1">Header</div>
+        <div class="gird-item-2">Navigation Menu</div>
+        <div class="gird-item-3">TAB1</div>
+        <div class="gird-item-4">TAB2</div>
+        <div class="gird-item-5">TAB3</div>
+        <div class="gird-item-6">MAIN</div>
+        <div class="gird-item-7">Banner1</div>
+        <div class="gird-item-8">Banner2</div>
+        <div class="gird-item-9">TAB4</div>
+    </div>
+</body>
+</html>

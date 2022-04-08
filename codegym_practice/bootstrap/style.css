@@ -1,0 +1,146 @@
+.navbar{
+    background-color: #FA063C;
+}
+.text-disc{
+    margin-top: 60px;
+}
+a{
+text-decoration: none;
+}
+.nav-item a{
+    color: white;
+    padding: 0 8px;
+}
+
+.nav-item a:hover{
+    color: black;
+}
+.img-desc{
+    position: relative;
+}
+.panel{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 25px 42px #eee;
+    z-index: 1;
+    bottom: 50%;
+    left: 10%;
+    padding: 16px 20px;
+}
+.panel h2, .panel p{
+    padding: 8px 0;
+}
+.features-bg{
+    height: 48vmin;
+    width: 100%;
+    background-image: url(https://cdn.unenvironment.org/2021-11/lake-g10e76b4ba_1920.jpg);
+    background-position: left top ;
+}
+.features-content{
+     padding: 0 20% ;
+}
+.number{
+    margin-top: -12vmin;
+}
+.number div{
+    width: min(50%, 220px);
+    margin: 0 2% 2%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 16px tomato;
+}
+.number p{
+    font-size: 60px;
+    color: rgb(219, 63, 15);
+    font-weight: 600;
+}
+.section-3{
+    margin: 100px 0 50px 0;
+}
+.price{
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+.price h1{
+    padding: 70px 0;
+    font-size: 50px;
+}
+.carousel-inner{
+    transition: transform 0.5s;
+    border: 1px solid #ddd;
+    box-shadow: 2px 16px 24px rgb(156, 151, 151);
+    border-radius: 5px;
+}
+.carousel-inner:hover{
+    transform: translateY(-8px);
+}
+.carousel-item h3{
+    padding-top: 16px;
+}
+.carousel-item .card{
+    border: none;
+    padding: 8px 16px;
+}
+.carousel-item{
+    margin-top: 16px;
+
+}
+
+.carousel-item img{
+    width: min(70%,200px);
+
+    margin: auto;
+    border-radius: 50%;
+}
+.section-4 .text{
+    padding: 5px;
+}
+.section-4 .text h3{
+    margin-right: 16px;
+}
+footer> div{
+    background-color: rgba(red, green, blue, 0.825);
+    padding: 14vmin 18vmin;
+}
+footer p{
+    opacity: 80%;
+    margin: 0;
+}
+.form-check-inline{
+    min-width: 60%;
+}
+footer .row >div{
+    margin-bottom: 30px;
+}
+.stick{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background: rgba(0,0,0,0.85);
+   z-index: 10;
+   transition: all 2s;
+}
+.banner{
+    height: 100vh;
+    background-image: linear-gradient(to top, #e23d62, #e9345a, #ef2951, #f51c47, #fa063c);
+}
+.navbar-brand{
+    color: #fff;
+}
+a.navbar-brand:hover{
+    color: rgb(243, 239, 239);
+    font-size: 36px;
+}
+.text-disc button{
+    background-color: #fff;
+    color: #000;
+   
+    border: none;
+}
+.text-disc button:hover{
+    background-color: #ddd ; 
+}
+.social i{
+    margin: 8px 5px;
+    font-size: 24px;
+}

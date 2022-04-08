@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Reverse Pulse </title>
+	<link rel="stylesheet"
+		type="text/css" href="style.css">
+		
+	<style>
+		.pulse {
+			position: absolute;
+			top: 35%;
+			left: 40%;
+			transform: translate(-505, -10%);
+			width: 100px;
+			height: 100px;
+			background: #33ff00;
+			border: 2px solid #33ff00;
+			border-radius: 50%;
+			box-sizing: border-box;
+			box-shadow: 0 0 0 36px #45237a,
+					0 0 0 40px #56ff00, 0 0 0 50px red;
+		}
+
+		.pulse:before,
+		.pulse:after {
+			content: '';
+			position: absolute;
+			left: -50px;
+			top: -50px;
+			right: -50px;
+			bottom: -50px;
+			border: 2px solid #33ff00;
+			border-radius: 30%;
+			animation: animate 3s linear infinite;
+			animation: name duration timing-function delay iteration-count direction fill-mode;
+		}
+
+		.pulse:after {
+			animation-delay: 1s;
+		}
+
+		@keyframes animate {
+			0% {
+				transform: scale(2.0);
+			}
+
+			100% {
+				transform: scale(0.1);
+			}
+		}
+		
+	</style>
+</head>
+
+<body>
+	<div class="pulse"></div>
+</body>
+
+</html>

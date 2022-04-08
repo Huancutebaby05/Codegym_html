@@ -1,0 +1,43 @@
+html{
+    background-color: sandybrown;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 0%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    
+   
+   /* border-spacing: 50px; */
+ 
+   
+}
+#caro td, th {
+    border: 2px solid #b9b4b4;
+  }
+#caro {
+    background-color: #ffffff;  
+    position: relative;
+    margin-left: 100px;
+    margin-top: -800px;
+}
+
+#caro tr:nth-child(even){
+    background-color: rgb(0, 0, 0);
+}
+#caro td:nth-child(even) {
+    background-color: #000000;
+  }
+#vi td{
+    text-align: center;
+    font-size: 40px;
+    font-style: bold; 
+    width: 100px;
+}
+#hi td{
+    text-align: center;
+    font-size: 40px;
+    font-style: bold;
+    
+}

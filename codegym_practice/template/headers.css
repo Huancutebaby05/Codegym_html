@@ -1,0 +1,255 @@
+body {
+  margin: 0 120px;
+}
+
+.container-fluid {
+  background-color: #dfe8fa;
+}
+
+.stick {
+  background-color: #2074f3;
+  position: fixed;
+  top: 0;
+  left: 120px;
+  right: 120px;
+  z-index: 10;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.stick button {
+  color: white;
+}
+
+.stick button:hover {
+  background: #0b0baa;
+}
+
+.navbar {
+  padding: 10px 40px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+}
+
+.navbar .logo i {
+  font-size: 28px;
+  background-color: #2074f3;
+  color: white;
+  border-radius: 10px;
+}
+
+.navbar .bar button {
+  margin: 0 12px;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.navbar .bar .navbar-nav .nav-item {
+  margin: 0 16px;
+}
+
+.navbar .bar .navbar-nav .nav-item a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+#section-1 .row img {
+  border-radius: 20px;
+}
+
+#section-1 .row .number h3 {
+  color: #2074f3;
+  font-weight: 700;
+}
+
+#section-1 .row .number p {
+  opacity: 0.8;
+}
+
+#section-1 .row .col {
+  margin-top: 80px;
+}
+
+#section-1 .row .col h1 {
+  font-size: 60px;
+  font-weight: 700;
+  padding-right: 30px;
+}
+
+#section-1 .row .col h4 {
+  padding: 2px 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #2074f3;
+  background-color: white;
+}
+
+#section-1 .row .col p {
+  opacity: 0.8;
+}
+
+#section-1 .row .col button {
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.cardcc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cardcc .cardc {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #dfe8fa;
+  -webkit-box-shadow: 2px 12px 24px #ccc;
+          box-shadow: 2px 12px 24px #ccc;
+  width: calc(25% - 30px);
+  margin: 15px;
+}
+
+.cardcc .cardc .cardc-img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.cardcc .cardc .cardc-content {
+  padding: 20px;
+}
+
+.cardcc .cardc .cardc-content .cardc-title {
+  font-weight: 500px;
+  margin-bottom: 25px;
+}
+
+.cardc-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardc-user-avatar {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.cardc-user-infor {
+  padding-left: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.cardc-user-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2px;
+}
+
+.cardc-user-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.cardc-user-game {
+  color: #999;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.cardc-user-top i {
+  color: #2074f3;
+  margin-left: 5px;
+}
+
+.cardc-bottom {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardc-live {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #ff6651;
+}
+
+.cardc-live span {
+  padding-left: 8px;
+}
+
+.cardc-watching {
+  color: #999;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.cardc-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cardc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cardc-bottom {
+  margin-top: auto;
+}
+/*# sourceMappingURL=headers.css.map */

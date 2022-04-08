@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart</title>
+</head>
+<style>
+    div{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: red;
+        position: relative;
+        margin: auto;
+        margin-top: -380px;
+        /* animation: heart  4s 0 infinite alternate none; */
+        animation-name: heart;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+    img{
+        display: block;
+        margin: auto;
+        margin-top: 100px;
+    }
+    @keyframes heart {
+        5%{bottom: 10px;left: 10px;}
+        10%{bottom: 20px;left: 20px;}
+        15%{bottom:30px ;left:30px ;}
+        20%{bottom:38px ;left:40px ;}
+        25%{bottom:43px ;left:50px ;}
+        30%{bottom: 49px;left:60px ;}
+        35%{bottom:52px ;left:70px ;}
+        40%{bottom: 54px ;left:80px ;}
+        45%{bottom: 56px ;left:90px ;}
+    }
+</style>
+<body>
+    <img src="./img/istockphoto-1183790559-612x612.jpg" alt="">
+    <div></div>
+</body>
+</html>

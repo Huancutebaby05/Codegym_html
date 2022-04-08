@@ -1,0 +1,25 @@
+.right-side{
+    img{
+        @include img-style();
+        
+    }
+    background-color: pink;
+    div{
+        div{
+            p{
+                background-color: #999;
+                color: aliceblue;
+            }
+
+        }
+    }
+}
+$bg-color:red;
+@mixin img-style{
+    border-radius: 5px;
+}
+body div{
+    background-color: $bg-color;
+}
+
+

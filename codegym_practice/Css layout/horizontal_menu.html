@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal menu</title>
+</head>
+<style>
+      body{
+ font-family: Arial;
+ font-size: 18px;
+ line-height: 26px;
+}
+#menu, #menu ul, #menu li{
+ padding:0;
+ margin:0;
+}
+#menu{
+    background-color: yellowgreen;
+    text-align: center;
+}
+#menu li{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    height: 44px;
+    width: 140px;
+}
+a{
+    line-height: 44px;
+    display: block;
+    text-decoration: none;
+    color: red;
+}
+#menu li:hover{
+    background-color: tomato;
+}
+
+#menu li a:hover{
+    color: rgb(132, 0, 255);
+}
+#menu li a:active{
+    color: black;
+}
+#menu ul ul{
+    visibility: hidden;
+    position: absolute;
+    top:44px ;
+    left: 0px;
+    }
+#menu  li:hover ul{
+    visibility: visible;
+}
+
+
+</style>
+<body>
+    <h1>This is Horizontal menu</h1>
+    <div id="menu">
+        <ul>
+            <li class="lv1">
+                <a href="#"> Home</a>
+            </li>
+            <li class="lv1">
+                <a href="https://www.facebook.com/watch/?v=301060075336069&aggr_v_ids[0]=301060075336069&notif_id=1643725248772429&notif_t=watch_follower_video&ref=notif" target="_blank"> Thể loại</a>
+              <ul>
+                <li class="lv2"><a href="#"> Tu Tiên</a></li>
+                <li class="lv2"><a href="#"> Trọng Sinh</a></li>
+                <li class="lv2"><a href="#"> Hài Hước</a></li>
+                <li class="lv2"><a href="#"> Đam Mỹ</a></li>
+              </ul>
+            </li>
+            <li class="lv1">
+                <a href="#"> Năm sản xuất</a>
+            <ul>
+                <li class="lv2"><a href="#"> 2017</a></li>
+                <li class="lv2"><a href="#"> 2018</a></li>
+                <li class="lv2"><a href="#"> 2019</a></li>
+                <li class="lv2"><a href="#"> 2020</a></li>
+            </ul>
+        </li>
+            <li class="lv1">
+                <a href="#"> Tác giả</a>
+            <ul>
+                <li class="lv2"><a href="#"> Mạc Hương Đồng Khiếu</a></li>
+                <li class="lv2"><a href="#"> Nhĩ Căn</a></li>
+                <li class="lv2"><a href="#"> Ám Ma Sư</a></li>
+                <li class="lv2"><a href="#"> Mã Anh Hùng</a></li>
+            </ul>
+        </li>
+            <li class="lv1">
+                <a href="#"> Phim đã lưu</a>
+            <ul>
+                <li class="lv2"><a href="#"> Song Tu Đạo Lữ Của Tôi</a></li>
+                <li class="lv2"><a href="#"> Ma Đạo Tổ Sư</a></li>
+                <li class="lv2"><a href="#"> Họa Giang Hồ Chi Bất Lương Nhân </a></li>
+                <li class="lv2"><a href="#"> Thiên Hành Cửu Ca</a></li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+</body>
+</html>

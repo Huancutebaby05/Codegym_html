@@ -1,0 +1,49 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    height: 100%;
+    width: 100%;
+}
+.flex_container{
+    padding-top: 20px;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1a1c28;
+}
+/* oder để thiết lập vị trí cho các item, */
+.flex_item{
+    width: 30%;
+    height: 30%;
+}
+.flex_item:nth-of-type(1){
+    background-color: #bf4470;
+    order: 2;
+    /* flex-grow: 1; */
+}
+.flex_item:nth-of-type(2){
+    background-color: aqua;
+    order: 3;
+    /* flex-grow: 3; */
+    /* flex-grow: để điều chỉnh khối tràn hết phần còn thừa của cha nó */
+    /* flex-shrink: 3;
+    flex-shrink: tóc độ thu nhỏ của khối khi kích thước thay đổi */
+}
+.flex_item:nth-of-type(3){
+    background-color: yellowgreen;
+    order: 4;
+    align-self: flex-start;
+}
+.flex_item:nth-of-type(4){
+    background-color: rgb(198, 130, 238);
+    order: 1;
+}

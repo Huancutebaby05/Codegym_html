@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    color: #ffa400;
+}
+
+.grid_col{
+    display: grid;
+    width: 80%;
+    margin: 50px auto 0;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* nếu grid-template-columns: là 3 thì màn hình sẽ chia kamf 3 cột và ngược lại đối với 1; */
+    grid-template-rows: 1fr auto;
+}
+.grid_row{
+    display: grid;
+    margin: 0;
+    grid-template-rows: subgrid;
+    
+}
+img{
+    width: 100%;
+    display: block;
+    grid-row: 1/3;
+    grid-column: 1;
+    /* grid-column: 1; để định dạng chữ và ảnh cùng nằm trên 1 cột, 
+    nếu bỏ giá trị này đi ảnh sẽ nằm bên cạnh chữ, với chiều rộng ảnh + chữ là width */
+}
+p{
+    padding: 8px;
+    grid-column: 1;
+    grid-row: 2;
+    /* grid-row: 2; thì chữ sẽ nằm bên trong căn dưới ảnh, còn nhận giá trị là 3 thì chữ sẽ nằm bên dưới ảnh căn lề trên. */
+    font-size: 20px;
+    line-height: 30px;
+    background-color: rgba(230,200,200,.6);
+}

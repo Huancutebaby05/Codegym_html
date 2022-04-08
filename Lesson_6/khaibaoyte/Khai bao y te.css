@@ -1,0 +1,32 @@
+#html{
+    font-size: 1rem;
+  
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+#head #body{
+    margin: 0;
+}
+#head{
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+#body{
+    
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 0;
+}
+#cuakhau{
+    position: absolute;
+    left: 700px;
+    top: 150px;
+}
+#dt{
+    
+}
+#gt{
+    position: absolute;
+    left: 700px;
+    top: 210px;
+}

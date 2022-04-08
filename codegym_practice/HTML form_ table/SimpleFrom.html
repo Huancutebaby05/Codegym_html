@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <form method="get" action="">
+    <h1>
+        Order Form
+    </h1>
+       <p>What do you want to buy?</p> 
+        <select name="goods" id="goods">
+            <option value="A">A</option>
+            <option value="B">B(+  0.5$)</option>
+            <option value="C">C(+  0.5$)</option>
+        </select>
+        <p>
+            How many would you like to order?
+        </p>
+        <input type="radio" value="1-$10">
+        <label for="1-$10">1-$10</label> <br>
+        <input type="radio" value="2-$20">
+        <label for="2-$20">2-$20</label> <br>
+        <input type="radio" value="3-$25">
+        <label for="3-$25">3-$25</label>
+        <p>
+            Name <span style="color: red;">*</span> 
+        </p>
+        <input type="text" name="FN" placeholder="FirstName" size="15">
+        <input type="text" name="LN" placeholder="LastName" size="15">
+        <p>
+            Email
+        </p>
+        <input type="email" name="email" size="35">
+        <p>
+            Phone Number
+        </p>
+        <input type="text" name="phone1" size="5"> - <input phone2 type="text" size="5"> - <input name="phone3" type="text" size="5">
+        <p>
+        <button > Submit</button>
+    </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+$color-medium:#70FF74; //green
+$bg-medium:#934745; // green bg
+$color-small:#A54533; //red
+$bg-small:#FDE5E6; //red bg
+$color-big:#285087; //blue
+$bg-big:#FFD891; //blue bg
+$fs-small: 24px;
+$fs-medium:26px;
+$fs-big:28px;
+@mixin layout($text-color, $bg-color,$fs) {
+    #container {
+        font-size: $fs;
+        line-height: 1.5;
+        margin: 24px 36px;
+        color: $text-color;
+        background-color: $bg-color;
+        border: 3px solid $text-color;
+        padding: 16px;
+    }
+}
+@media screen and(max-width:576px) {
+    @include layout($color-small,$bg-small,$fs-small)
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    @include layout($color-medium,$bg-medium,$fs-medium)
+}
+
+@media screen and (min-width:769px) {
+    @include layout($color-big,$bg-big,$fs-big)
+}

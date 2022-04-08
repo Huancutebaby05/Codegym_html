@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+ 
+.form{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 20px;
+    width: 320px;
+    margin: 200px auto;
+    border: 3px solid #eee;
+    border-radius: 10px;
+    color: #fff;
+}
+input, select{
+    padding-left: 10px;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    padding-bottom: 5px;
+}
+.gender input, .abc{
+    margin: 0 5px;
+    width: 16px;
+    height: 16px;
+}
+button{
+    padding: 5px 10px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gallery</title>
+</head>
+<style>
+    html,body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    p,h2{
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    .image{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .image div{
+        box-sizing: border-box;
+        width: 24%;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    .image div:hover{
+        border: 1px solid black;
+    }
+    span{
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    @media screen and (max-width:700px){
+        .image div{
+            width: 48%;
+        }
+    }
+    @media screen and (max-width:500px){
+        .image div{
+            width: 98%;
+        }
+    }
+</style>
+<body>
+    <h2>
+        Responsive Image Gallery
+    </h2>
+    <p>
+        Resize the browser window to see the effect.
+    </p>
+    <div class="image">
+        <div>
+        <img src="https://demo.codegym.vn/web/15/gallery/img_fjords.jpg" alt="">
+        <span> Add a description of the image here</span>
+    </div>
+    <div>
+        <img src="https://demo.codegym.vn/web/15/gallery/img_forest.jpg" alt="">
+        <span> Add a description of the image here</span>
+    </div>
+    
+        <div>
+            <img src="https://demo.codegym.vn/web/15/gallery/img_lights.jpg" alt="">
+           <span> Add a description of the image here</span></div>
+        <div>
+            <img src="https://demo.codegym.vn/web/15/gallery/img_mountains.jpg" alt="">
+           <span> Add a description of the image here</span>
+        </div>
+    </div>
+    <p>
+        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).
+    </p>
+</body>
+</html>

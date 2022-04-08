@@ -1,0 +1,91 @@
+html{
+    font-size: 20px;
+    background-image: url(./img/430375.jpg) ;
+    background: cover;
+    background-repeat: no-repeat;
+    background-position: -250px;
+    background-position: top;
+    background-size: COVER;
+    color: blueviolet;
+    line-height: 35px;
+    margin-left: 10px;
+}
+#secondhead{
+    font-size: 1.5rem;
+    color: rgb(255, 19, 19);
+   line-height: 40px;
+   margin-left: 30px;
+}
+#head{
+    font-size: 1.8rem;
+    text-align: center;
+   background-color: rgba(236, 72, 214, 1);
+   color: rgb(98, 0, 255);
+   padding: 10px 0 10 30px;
+   width: 580px;
+}
+/* .total{
+    position: relative;
+} */
+#video1{
+    position: absolute;
+    left: 450px;
+    top: 150px;   
+     padding: 10px 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(221, 38, 160);
+}
+
+#overflow{
+    width: 300px;
+    height: 150px;
+    overflow: scroll;
+    color: rgb(255, 98, 203);
+    position: relative;
+    
+}
+
+   #overflow a:hover{
+    color: blue;
+            text-decoration: underline;
+}
+
+#copy{
+    background-color: rgb(235, 234, 229);
+    color: brown;
+    text-align: center;
+}
+#menubar{
+    width: 300px;
+    float: right;
+    color: rgb(162, 0, 255);
+}
+#menulist{
+    padding:0;
+    font: 16px verdana;
+}
+.menuitem{
+    width: 150px;
+    background-color: rgba(243, 182, 235, 0.5);
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 80px;
+    border: 3px solid rgb(248, 196, 218) ;
+    border-radius: 15px;
+    text-align: center;
+}
+.menuitem:hover{
+    color: black;
+    background-color: rgba(255, 249, 249, 0.6);
+}
+.menuitem a{
+    text-decoration: none;
+    color: red;
+}
+.menuitem a:hover{
+    color: rgb(11, 245, 221);
+    text-decoration: underline;
+}

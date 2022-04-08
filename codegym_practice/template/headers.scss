@@ -1,0 +1,215 @@
+$blue:#2074f3;
+
+body {
+margin: 0 120px;
+}
+.container-fluid{
+    background-color:rgb(223, 232, 250) ;
+}
+.stick {
+    button {
+        color: white;
+    }
+
+    button:hover {
+        background: rgb(11, 11, 170);
+    }
+
+    background-color: $blue;
+    position: fixed;
+    top: 0;
+    left: 120px;
+    right: 120px;
+    z-index: 10;
+    transition: all 2s;
+}
+
+.navbar {
+    padding: 10px 40px;
+
+    .logo {
+        font-weight: bold;
+
+        i {
+            font-size: 28px;
+            background-color: $blue;
+            color: white;
+            border-radius: 10px;
+        }
+    }
+
+    .bar {
+        button {
+            margin: 0 12px;
+            padding: 8px 20px;
+            border-radius: 8px;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 16px;
+
+            a {
+                font-size: 14px;
+                color: black;
+                text-decoration: none;
+
+            }
+        }
+
+    }
+
+}
+
+#section-1 {
+    .row {
+
+        img {
+            border-radius: 20px;
+
+        }
+
+        .number {
+            h3 {
+                color: $blue;
+                font-weight: 700;
+            }
+
+            p {
+                opacity: 0.8;
+            }
+
+            ;
+        }
+
+        .col {
+            margin-top: 80px;
+
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+                padding-right: 30px;
+            }
+
+            h4 {
+                padding: 2px 5px;
+                width: fit-content;
+                color: $blue;
+                background-color: white;
+            }
+
+            p {
+                opacity: 0.8;
+            }
+
+            button {
+
+                padding: 8px 20px;
+                border-radius: 8px;
+            }
+        }
+
+    }
+}
+
+.cardcc {
+    display: flex;
+flex-wrap: wrap;
+    .cardc{
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: rgb(223, 232, 250);
+        box-shadow: 2px 12px 24px #ccc;
+        width: calc(25% - 30px);
+        margin: 15px;
+
+        .cardc-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .cardc-content {
+            padding: 20px;
+            .cardc-title {
+                font-weight: 500px;
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+}
+
+
+.cardc-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cardc-user-avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100rem;
+    flex-shrink: 0;
+}
+
+.cardc-user-infor {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+.cardc-user-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.cardc-user-name{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+}
+.cardc-user-game{
+    color: #999;
+    font-weight: 300;
+    font-size: 13px;
+}
+.cardc-user-top i{
+    color: #2074f3;
+    margin-left: 5px;
+}
+.cardc-bottom{  
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.cardc-live{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #ff6651;
+    span{
+        padding-left: 8px;
+    }
+}
+.cardc-watching{
+    color: #999;
+    font-weight: 300;
+    font-size: 13px;
+}
+// chỉnh cho các item có chiều ca0 bằn nhau
+.cardc-content{
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+}
+.cardc{
+    display: flex;
+    flex-direction: column;
+}
+.cardc-bottom{
+margin-top: auto;
+}
