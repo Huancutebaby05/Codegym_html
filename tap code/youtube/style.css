@@ -1,0 +1,393 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+}
+header{
+    background-color: white;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.97;
+    z-index: 2;
+}
+header>i{
+    font-size: 20px;
+    padding: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+header input{
+    box-sizing: border-box;
+    border: 1px solid rgb(197, 193, 193);
+    height: 40px;
+    width: 572px;
+    font-size: 1.1rem;
+    position: absolute;
+    left: 412px;
+    top: 8px;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+header input:focus{
+    border: 2.3px solid blue;
+}
+header button{
+    box-sizing: border-box;
+    height: 40px;
+    width: 64px;
+    border: 1px solid rgb(197, 193, 193);
+    margin-left: -1px;
+    position: absolute;
+    left:984px;
+    top: 8px;
+    background-color: rgb(231, 227, 227);
+    cursor: pointer;
+    opacity: 0.7;
+}
+header button:hover{
+    opacity: 0.9;
+}
+header button i{
+    font-size: 1.1rem;
+}
+.fa-youtube{
+    height: 56px;
+    cursor: pointer;
+}
+#youtube{
+    cursor: pointer;
+}
+header img{
+    position: absolute;
+    left: 1458px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.fa-microphone{
+    background-color: #eee;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    left:1056px ;   
+    top: 8px;
+    
+    }
+    .fa-bars{
+        color: rgb(128, 121, 121);
+    }
+    .fa-youtube{
+        box-sizing: border-box;
+        color: red;
+        font-size: 28px;
+        position: relative;
+        top: 3px;
+    }
+    #youtube{
+        font-size: 20px;
+        letter-spacing: 0px;
+        font-family: Copperplate, Papyrus, fantasy;
+        margin-left: -16px;
+        padding-left: 0;   
+    }
+    .fa-video{
+        position: absolute;
+        left:1300px ;   
+        top: 8px;
+        color: rgb(78, 73, 73);
+    }
+    .fa-braille{
+        position: absolute;
+        left:1348px ;
+        top: 8px;
+        color: rgb(82, 80, 80);
+    }
+    .fa-bell{
+        position: absolute;
+        left:1396px ;
+        top: 8px;
+        color: rgb(85, 81, 81);
+    }
+main{
+    float: left;
+    margin-top: 56px;
+    padding-top: 24px;
+    padding-left: 81px;
+    width: 68%;
+    display: block;
+    box-sizing: border-box;
+}
+.video{
+    position: relative;
+    padding-top: 56.25%;
+}
+main iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 96%;
+    height: 96%;
+}
+.name{
+    box-sizing: border-box;
+    width: 97%;
+    height: 110px;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(214, 209, 209);
+}
+.name>a{
+    font-size: 12px;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: blue;
+    text-decoration: none;
+}
+.motion {
+    float: right;
+    margin-top: 10px;
+}
+.motion>span{
+    position: absolute;
+    left: 81px;
+    font-size: 14px;
+}
+.motion i{
+   font-size: 18px;
+   margin-right: 4px;
+}
+.motion>a{
+    font-size: 14px;
+    margin-right: 16px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.motion a span{
+    font-size: 13px;
+    display: none;  
+    padding: 0 5px;
+    width: max-content;
+    background-color: gray;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.motion a:hover span{
+     display: block;
+      position: absolute;
+      left: 20px;
+      top: -35px;
+
+}
+.discribe{
+    font-size: 14px;
+    height: 164px;
+    width: 100%;
+    margin-top: 16px;
+    position: relative;
+}
+.discribe img{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    border-style: none;
+    cursor: pointer;
+}
+.discribe>span{
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+    margin-left: 12px;
+}
+.discribe button{
+    margin-top: 5px;
+    margin-right: 26px;
+    background-color: rgb(177, 11, 11);
+    border: 1px solid rgb(180, 11, 11);
+    border-radius: 3px;
+    color: white;
+    width: 94px;
+    height: 36px;
+    float: right;
+    cursor: pointer;
+}
+.regist p{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid rgb(141, 137, 137);
+    border-radius: 4px ;
+    width: max-content;
+    background-color: rgb(141, 137, 137);
+    padding: 3px 5px;
+}
+.regist:hover p{
+    display: block;
+}
+img, i{
+    cursor: pointer;
+}
+
+.discribe div span{
+    font-size: 14px;
+    cursor: pointer;
+}
+.discribe div{
+    margin-left: 64px;
+}
+.discribe div a{
+    text-decoration: none;
+    color: blue;
+}.fill_comment{
+    margin: 0;
+    padding: 0;
+}
+.fill_comment i{
+    margin-left: 24px;
+}
+.fill_comment img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.fill_comment input{
+    position: relative;
+    bottom: 24px;
+    left: 8px;
+    width: 874px;
+    height: 20px;
+    border: none;
+    background-color: rgb(246, 246, 246);
+    border-bottom:1px solid rgb(156, 152, 152);
+}
+.fill_comment input:focus{
+    border: none;
+    border-bottom:2px solid rgb(26, 25, 25);
+}
+.fa-grin-beam{
+    position: relative;
+    bottom: 16px;
+    left: 28px;
+}
+.user{
+    position: relative;
+    top: -24px;
+    left: 56px;
+}
+
+
+.comment .user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: -56px;
+}
+.user .top {
+    display: inline;
+    position: relative;
+    top: -28px;
+    font-weight: 200;
+    
+}
+.user .top span:first-child{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 14px;
+}
+.user span{
+    cursor: pointer;
+}
+.user_comment{
+    font-size: 14px;
+}
+
+.reaction i{
+    position: relative;
+    font-size: 16px;
+    padding-right: 4px;
+    margin-right: 5px;
+}
+.phanhoi, .reaction{
+    position: relative;
+    top: -20px;
+    margin-top: 5px;
+}
+.right{
+    float: left;
+    box-sizing: border-box;
+    width: 28%;
+    margin-top: 80px;
+    margin-right: 24px;
+    margin-left: 0;
+}
+.unit img{
+    float: left;
+    width: 168px;
+    height: 94px;
+}
+.right>div{
+    display: block;
+    height: 94px;
+    margin-bottom: 8px;
+}
+.unit div{
+    float: left;
+    width: px;
+    height: 80px;
+    margin-left: 8px;
+    margin-right: 24px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.unit>i{
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+.title{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis; 
+    display: -box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 200px;
+    max-height: 40px;
+}
+.title:hover .title{
+    overflow: visible;
+}
+.fa-ellipsis-v{
+    visibility: hidden;
+}
+.unit:hover .fa-ellipsis-v{
+    visibility: visible;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

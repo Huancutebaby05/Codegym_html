@@ -303,26 +303,27 @@ body > hr {
           justify-content: space-between;
 }
 
-.product-bottom .icon {
+.product-bottom button {
   font-size: 14px;
   background-color: #fff;
   color: #ff5dab;
   padding: 8px 14px;
   border-radius: 5px;
+  border: none;
 }
 
-.product-bottom .icon .fa-solid,
-.product-bottom .icon .fas {
+.product-bottom button .fa-solid,
+.product-bottom button .fas {
   font-size: 20px;
   padding-right: 8px;
   color: #ff5dab;
 }
 
-.product-bottom .icon:hover {
+.product-bottom button:hover {
   opacity: 0.8;
 }
 
-.product-bottom .icon:hover i {
+.product-bottom button:hover i {
   opacity: 0.8;
 }
 
@@ -767,4 +768,3 @@ tbody .line th {
   border: none;
   border-radius: 2px;
 }
-/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 1. vị trí
+2. Kích thước
+3. màu sắc
+4. Kiểu dáng ( kiểu chữ hình tròn hình vuông) */
+#wrapper{
+
+}
+#header{
+    height: 46px;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+ul{
+    list-style: none;
+}
+#nav{
+    display: inline-block;
+}
+#nav>li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+#nav > li > a{
+    color: #fff;
+    padding: 0 24px;
+}
+#nav li a{ 
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 12px;
+    display: block;
+}
+#nav>li:hover >a{
+    color: #000;
+    background-color: #ddd;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 1px 1px 2px #ddd;
+}
+#nav li:hover ul{
+    display: block;
+}
+#nav .subnav a{
+    color: #000;
+}
+#nav ul li:hover a{
+    color: #000;
+    background-color: #ddd;
+}
+.search{
+    float: right;
+    margin-right: 8px;
+}
+.search .fas{
+    font-size: 24px;
+    line-height: 46px;
+    padding: 0 21px;
+    color: white;
+}
+.search .fas:hover{
+    cursor: pointer;
+    background-color: orangered;
+}
+#slider{
+    position: relative;
+    padding-top: 50%;
+    background: url(./img/701288.png) center / cover no-repeat ;
+}
+#slider .text_content{
+    font-size: 1.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 48px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
+.text_content h2{
+    margin: 20px 0;
+}
+
+#content{
+    height: 1000px;
+   
+}
+#footer{
+
+}

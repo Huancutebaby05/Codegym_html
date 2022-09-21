@@ -1,0 +1,78 @@
+@charset "UTF-8";
+html, body {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 62px;
+  padding: 10px 0;
+  margin: 0 210px;
+}
+
+.header .logo img {
+  height: 42px;
+}
+
+.header .header-right .header-right-data {
+  height: 48px;
+  width: 224px;
+  margin-right: 8px;
+  margin-top: -4px;
+}
+
+.header .header-right .tell {
+  font-size: 26px;
+  color: #3c59ab;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.header .header-right .time {
+  font-size: 12px;
+  line-height: 1;
+  margin-top: -8px;
+}
+
+.header .header-right .ask {
+  height: 35px;
+  width: 143px;
+  padding: 0 8px;
+  border: none;
+  border-radius: 2px;
+  background-color: #e6e8ec;
+  font-size: 16px;
+  color: #3c59ab;
+}
+
+.header .header-right .ask img {
+  background-color: #3c59ab;
+}
+
+.navbar {
+  height: 45px;
+  font-size: 16px;
+  background-color: #3c59ab;
+}
+
+.navbar .navbar-nav {
+  margin: 0 210px;
+}
+
+.navbar .navbar-nav a, .navbar .navbar-nav li {
+  color: #fff;
+}

@@ -610,60 +610,60 @@
     
 
     <script>
-        function myFunction() {
-            var checkBox = document.getElementById("buy-1");
-            var text = document.getElementById("product-1");
-            if (checkBox.checked == true) {
-                text.style.display = "block";
-            } else {
-                text.style.display = "none";
-            }
+//         function myFunction() {
+//             var checkBox = document.getElementById("buy-1");
+//             var text = document.getElementById("product-1");
+//             if (checkBox.checked == true) {
+//                 text.style.display = "block";
+//             } else {
+//                 text.style.display = "none";
+//             }
 
-        }
-//sp 1
-        var allSubjectName = document.querySelectorAll(".product-1");
-        for (var index = 0; index < allSubjectName.length; index++) {
-            allSubjectName[index].addEventListener("click", function () {
-                this.classList.toggle("active");
-            });
-            allSubjectName[index].querySelector("button").addEventListener("click",
-                function () {
-                    this.closest(".product-1").remove();
-                });
-        }
-// sp 2
-var allSubjectName = document.querySelectorAll(".product-2");
-        for (var index = 0; index < allSubjectName.length; index++) {
-            allSubjectName[index].addEventListener("click", function () {
-                this.classList.toggle("active");
-            });
-            allSubjectName[index].querySelector("button").addEventListener("click",
-                function () {
-                    this.closest(".product-2").remove();
-                });
-        }
-        //sp 3
-        var allSubjectName = document.querySelectorAll(".product-3");
-        for (var index = 0; index < allSubjectName.length; index++) {
-            allSubjectName[index].addEventListener("click", function () {
-                this.classList.toggle("active");
-            });
-            allSubjectName[index].querySelector("button").addEventListener("click",
-                function () {
-                    this.closest(".product-3").remove();
-                });
-        }
-        //sp 4
-        var allSubjectName = document.querySelectorAll(".product-4");
-        for (var index = 0; index < allSubjectName.length; index++) {
-            allSubjectName[index].addEventListener("click", function () {
-                this.classList.toggle("active");
-            });
-            allSubjectName[index].querySelector("button").addEventListener("click",
-                function () {
-                    this.closest(".product-4").remove();
-                });
-        }
+//         }
+// //sp 1
+//         var allSubjectName = document.querySelectorAll(".product-1");
+//         for (var index = 0; index < allSubjectName.length; index++) {
+//             allSubjectName[index].addEventListener("click", function () {
+//                 this.classList.toggle("active");
+//             });
+//             allSubjectName[index].querySelector("button").addEventListener("click",
+//                 function () {
+//                     this.closest(".product-1").remove();
+//                 });
+//         }
+// // sp 2
+// var allSubjectName = document.querySelectorAll(".product-2");
+//         for (var index = 0; index < allSubjectName.length; index++) {
+//             allSubjectName[index].addEventListener("click", function () {
+//                 this.classList.toggle("active");
+//             });
+//             allSubjectName[index].querySelector("button").addEventListener("click",
+//                 function () {
+//                     this.closest(".product-2").remove();
+//                 });
+//         }
+//         //sp 3
+//         var allSubjectName = document.querySelectorAll(".product-3");
+//         for (var index = 0; index < allSubjectName.length; index++) {
+//             allSubjectName[index].addEventListener("click", function () {
+//                 this.classList.toggle("active");
+//             });
+//             allSubjectName[index].querySelector("button").addEventListener("click",
+//                 function () {
+//                     this.closest(".product-3").remove();
+//                 });
+//         }
+//         //sp 4
+//         var allSubjectName = document.querySelectorAll(".product-4");
+//         for (var index = 0; index < allSubjectName.length; index++) {
+//             allSubjectName[index].addEventListener("click", function () {
+//                 this.classList.toggle("active");
+//             });
+//             allSubjectName[index].querySelector("button").addEventListener("click",
+//                 function () {
+//                     this.closest(".product-4").remove();
+//                 });
+//         }
     </script>
 </body>
 
